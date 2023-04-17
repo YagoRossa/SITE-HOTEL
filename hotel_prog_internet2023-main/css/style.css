@@ -1,0 +1,36 @@
+/**  Template CSS **/
+:root{
+    --primary: #fea116;
+    --ligth: #f1f8ff;
+    --dark: #0f172b;
+}
+
+.fw-medium{
+    font-weight: 500 !important;
+}
+
+.fw-semi-bold{
+    font-weight: 600 !important;
+}
+
+.back-top-top{
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+
+/** spinner **/
+#spinner{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show{
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    visibility: visible;
+    opacity: 1;
+}
